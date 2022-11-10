@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exam.student.edit.EditController">
+    <children>
+        <Text layoutX="14.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Students">
+            <font>
+                <Font size="50.0" />
+            </font>
+        </Text>
+        <Text layoutX="87.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Text layoutX="87.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Text layoutX="87.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Text layoutX="87.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtId" layoutX="276.0" layoutY="120.0" promptText="id">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtName" layoutX="276.0" layoutY="220.0" promptText="name">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtAddress" layoutX="276.0" layoutY="320.0" promptText="address">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtPhone" layoutX="276.0" layoutY="420.0" promptText="phone">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <Button layoutX="357.0" layoutY="525.0" mnemonicParsing="false" onAction="#updateStudent" text="Update">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+      <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#backToList" text="&lt;&lt; List" />
+      <Text fx:id="errors" fill="#ff0202" layoutX="378.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ERROR !!!" visible="false" />
+    </children>
+</AnchorPane>
