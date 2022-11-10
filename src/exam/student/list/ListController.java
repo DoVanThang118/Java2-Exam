@@ -34,7 +34,7 @@ public class ListController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        list.add(new Student(12,"asd","asda",123123123));
+//        list.add(new Student(12,"asd","asda",123123123));
         tcId.setCellValueFactory(new PropertyValueFactory<>("id"));
         tcName.setCellValueFactory(new PropertyValueFactory<>("name"));
         tcAddress.setCellValueFactory(new PropertyValueFactory<>("address"));

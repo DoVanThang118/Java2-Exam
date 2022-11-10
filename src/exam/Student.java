@@ -23,11 +23,12 @@ public class Student {
         this.action.setOnAction(event -> {
             try {
                 EditController.editItem = this;
-                Parent listBook = FXMLLoader.load(getClass().getResource("../edit/edit.fxml"));
+                Parent listBook = FXMLLoader.load(getClass().getResource("student/edit/edit.fxml"));
                 Main.rootStage.setTitle("Edit Student");
                 Main.rootStage.setScene(new Scene(listBook,800,600));
             }catch (Exception e){
-                System.out.println("ERROR");
+
+                System.out.println(e.getMessage());
             }
         });
     }
